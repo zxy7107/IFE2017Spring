@@ -136,42 +136,40 @@
 
 	<aside>
 			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-			<article>
-				<form>
-					<h2>侧栏注册窗口标题</h2>
-					<label for="email">请输入邮箱地址</label>
-					<input type="text" id="email" placeholder="这是一个文本输入框">
-					<p>邮箱地址请按要求格式输入</p>
-					<label for="password">请输入密码</label>
-					<input type="text" id="password" placeholder="这是一个文本输入框">
-					<label for="password_repeat">请重复输入密码</label>
-					<input type="text" id="password_repeat" placeholder="这是一个文本输入框">
-					<p>密码请为6-16位英文数字</p>
+			<form>
+				<h2>侧栏注册窗口标题</h2>
+				<label for="email">请输入邮箱地址</label>
+				<input type="text" id="email" placeholder="这是一个文本输入框">
+				<p>邮箱地址请按要求格式输入</p>
+				<label for="password">请输入密码</label>
+				<input type="text" id="password" placeholder="这是一个文本输入框">
+				<label for="password_repeat">请重复输入密码</label>
+				<input type="text" id="password_repeat" placeholder="这是一个文本输入框">
+				<p>密码请为6-16位英文数字</p>
+			
+				<span>性别：</span>
+				<label for="male">男</label>
+				<input type="radio" name="sex" id="male">
+				<label for="female">女</label>
+				<input type="radio" name="sex" id="female">
+				<span>城市：</span>
+				<select name="city">
+					<option value="shanghai">上海</option>
+					<option value="beijing">北京</option>
+					<option value="guangzhou">广州</option>
+				</select>
+				<span>爱好：</span>
+				<label for="sports">运动</label>
+				<input type="checkbox" name="hobby" id="sports">
+				<label for="art">艺术</label>
+				<input type="checkbox" name="hobby" id="art">
+				<label for="science">科学</label>
+				<input type="checkbox" name="hobby" id="science">
+				<span>个人描述：</span>
+				<textarea name="description" cols="30" rows="2" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+				<input type="submit" value="确认提交">
+			</form>
 				
-					<span>性别：</span>
-					<label for="male">男</label>
-					<input type="radio" name="sex" id="male">
-					<label for="female">女</label>
-					<input type="radio" name="sex" id="female">
-					<span>城市：</span>
-					<select name="city">
-						<option value="shanghai">上海</option>
-						<option value="beijing">北京</option>
-						<option value="guangzhou">广州</option>
-					</select>
-					<span>爱好：</span>
-					<label for="sports">运动</label>
-					<input type="checkbox" name="hobby" id="sports">
-					<label for="art">艺术</label>
-					<input type="checkbox" name="hobby" id="art">
-					<label for="science">科学</label>
-					<input type="checkbox" name="hobby" id="science">
-					<span>个人描述：</span>
-					<textarea name="description" cols="30" rows="2" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
-					<input type="submit" value="确认提交">
-				</form>
-				
-			</article>
 		</aside>
 		<footer>版权所有&copy;</footer>
 </body>
