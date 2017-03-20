@@ -1,0 +1,47 @@
+html, body {
+	height: 100%;
+}
+body {
+	/*水平垂直居中：方法3(即使子元素设置了宽度，宽度也可自适应)*/
+/*	display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+.gray-box {
+	position: relative;
+	overflow: hidden;
+	padding: 25px;
+	width: 400px;
+	/*height: 200px; */ /*不定高*/
+	background-color: #ccc;
+
+	/*水平居中：方法1*/
+	/*margin: 0 auto;*/
+
+	/*水平垂直居中：方法2*/
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	top: 50%;
+
+	
+
+
+}
+.gray-box:before, .gray-box:after {
+	content: '';
+	display: block;
+	background-color: #fc0;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.gray-box:before {
+	position: absolute;
+	left: -25px;
+	top: -25px;
+}
+.gray-box:after {
+	position: absolute;
+	right: -25px;
+	bottom: -25px;
+}
