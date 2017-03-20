@@ -10,7 +10,7 @@ body {
 .gray-box {
 	position: relative;
 	overflow: hidden;
-	padding: 25px;
+	padding: 50px;
 	width: 400px;
 	/*height: 200px; */ /*不定高*/
 	background-color: #ccc;
@@ -20,28 +20,44 @@ body {
 
 	/*水平垂直居中：方法2*/
 	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);	/*或者*/	/*margin-left: -200px; */ /*不定高无效*/
 	top: 50%;
 
-	
-
+	/*水平垂直居中：方法4(必须定宽高；不定宽高，平铺)*/
+/*	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
 
 }
 .gray-box:before, .gray-box:after {
 	content: '';
 	display: block;
 	background-color: #fc0;
-	border-radius: 50%;
+/*	width: 100px;
+	height: 100px;
+	border-radius: 50%;*/
+
 	width: 50px;
 	height: 50px;
+
 }
 .gray-box:before {
 	position: absolute;
-	left: -25px;
-	top: -25px;
+/*	left: -50px;
+	top: -50px;*/
+	border-radius: 0 0 50px 0;/*或者*/ /*border-bottom-right-radius:50px;*/
+	left: 0;
+	top: 0;
 }
 .gray-box:after {
 	position: absolute;
-	right: -25px;
-	bottom: -25px;
+	/*right: -50px;*/
+	/*bottom: -50px;*/
+	border-radius: 50px 0 0 0; /*或者*/ /*border-top-left-radius:50px;*/
+	right: 0;
+	bottom: 0;
+	
 }
