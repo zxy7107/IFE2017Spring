@@ -1,0 +1,227 @@
+
+body {
+	background-color: #dedede;
+}
+
+header {
+	position: relative;
+	height: 58px;
+	width: 100%;
+	background-color: #333;
+	/*overflow: auto; */ /*清浮动*/
+	/*zoom: 1;*/
+}
+
+header h1 {
+	position: absolute;
+	height: 100%;
+}
+header h1 img {
+	height: 100%;
+}
+header nav {
+	float: right;
+	height: 100%;
+	margin-left: 30%;
+	text-align: right;
+	padding-right: 20px;
+}
+
+header nav ul {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav li {
+	display: inline-block;
+	width: 100px;
+	
+}
+nav li:before {
+	content: '\2022';
+	margin-right: 6px;
+}
+nav li a {
+	color: #fff;
+}
+
+
+footer {
+	background-color: #333;
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+	text-align: center;
+	font-size: 8px;
+}
+
+.main {
+	float: left;
+	margin: 20px 396px 20px 20px;
+
+}
+
+.ali-article {
+	padding: 40px 20px;
+	background-color: #fff;
+	box-shadow: 1px 1px 1px 0 #888;
+}
+.ali-article:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.ali-article hgroup > h2 {
+	margin-bottom: 22px;
+}
+
+.ali-article hgroup > h3 {
+	color: #666;
+	margin-bottom: 14px;
+}
+
+.ali-article-2 img {
+	margin: 18px 0;
+}
+.ali-article-2 .ali-list {
+	list-style: none;
+}
+.ali-article-2 .ali-list li {
+	height: 24px;
+	line-height: 24px;
+}
+
+.ali-article-3 figure{
+	float: left;
+	width: 120px;
+	margin-left: 40px;
+	padding: 10px;
+	overflow: auto;
+	border: 1px solid #cecece;
+} 
+.ali-article-3 figure:not(:last-child){
+	margin-bottom: 14px;
+}
+.ali-article-3 figure img {
+	width: 100%;
+}
+.ali-article-3 figcaption {
+	margin-bottom: 10px;
+}
+.ali-article-3 h2 {
+	margin-bottom: 20px;
+}
+.ali-article-4 .ali-list li{
+	margin-bottom: 10px;
+}
+.ali-article-4 table {
+	width: 100%;
+	text-align: left;
+}
+.ali-article-4 td, .ali-article-4 th{
+	border: 1px solid #ccc;
+	padding: 5px;
+
+}
+.ali-article-4 td:first-child {
+	width: 40%;
+}
+
+.ali-article-4 td:nth-child(2) {
+	width: 40%;
+}
+
+.ali-article-4 thead {
+	background-color: #333;
+	color: #fff;
+}
+.ali-article-4 tfoot {
+	background-color: #ccc;
+}
+.ali-article-info {
+	color: #666;
+	margin-bottom: 14px;
+}
+.ali-author {
+	margin-right: 4px;
+}
+
+.ali-content {
+	font-size: 14px;
+	line-height: 1.5;
+}
+aside {
+	float: left;
+	width: 360px;
+	margin-left: -378px;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 1px 1px 1px 0 #888;
+}
+aside > h2 {
+	line-height: 38px;
+	padding-left: 10px;
+	border-left: 3px solid #ccc;
+}
+aside  table {
+	width: 100%;
+	margin-bottom: 12px;
+}
+aside td {
+	font-size: 10px;
+	height: 26px;
+	line-height: 26px;
+}
+aside td:first-child {
+	width: 32%;
+	text-align: right;
+	padding-right: 12px;
+	
+}
+aside .ali_rules {
+	color: #cacaca;
+}
+
+aside input::-webkit-input-placeholder, aside textarea::-webkit-input-placeholder {
+	color: #000;
+}
+
+aside input::-moz-placeholder, aside textarea::-moz-placeholder {
+	color: #000;
+}
+
+aside input:-ms-input-placeholder, aside textarea:-ms-input-placeholder {
+	color: #000;
+}
+
+aside input:-moz-placeholder, aside textarea:-moz-placeholder {
+	color: #000;
+}
+
+aside td:nth-child(2) label {
+	margin-right: 8px;
+}
+.ali-description {
+	position: relative;
+}
+.ali-description textarea{
+	position: absolute;
+	top: 0;
+	width: 90%;
+	height: 100%;
+}
+.ali-description td:nth-child(2) {
+	padding-right: 40px;
+	position: relative;
+	height: 104px;
+}
+
+.ali-btn-submit {
+	width: 100%;
+	height: 38px;
+	background-color: #3355d0;
+	color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+
+}
