@@ -88,3 +88,65 @@
 	width: calc(100% - 320px);
 	padding: 0 20px;
 }
+
+/*圣杯布局*/
+.tm-holy {
+	overflow: hidden;
+	padding: 20px 160px 20px 240px;
+}
+.tm-holy .tm-content {
+	width: 100%;
+	float: left;
+}
+.tm-holy .tm-header {
+	float: left;
+	margin-left: -100%;
+	position: relative;
+	left: -220px;
+}
+.tm-holy .tm-aside {
+	/*float: left;*/
+	margin-left: -120px;
+	float: right; /* margin-right无效*/
+	position: relative;
+	right: -140px;
+}
+
+/*双飞翼布局*/
+.tm-2wings {
+	overflow: hidden;
+}
+.tm-2wings .tm-content {
+	width: 100%;
+	float: left;
+}
+.tm-2wings .tm-inner {
+	margin: 0 140px 0 220px;
+}
+.tm-2wings .tm-header {
+	float: left;
+	margin-left: -100%;
+}
+.tm-2wings .tm-aside {
+	float: left;
+	margin-left: -120px;
+}
+
+/*圣杯布局-我的写法*/
+.tm-holy-my {
+	overflow: hidden;
+}
+.tm-holy-my .tm-content {
+	float: left;
+	padding: 0 140px 0 220px;
+}
+
+.tm-holy-my .tm-header {
+	float: left;
+	margin-left: -100%;
+}
+.tm-holy-my .tm-aside {
+	float: left;
+	margin-left: -120px;
+}
+
