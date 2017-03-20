@@ -1,0 +1,47 @@
+.tm {
+	position: relative;
+	padding: 20px;
+	background-color: #eee;
+}
+
+.tm-header {
+	width: 200px;
+	position: absolute;
+	padding: 20px;
+	background-color: #fff;
+
+}
+
+.tm-header figcaption {
+	text-align: center;
+}
+.tm-header img {
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.tm-container {
+	margin-left: 240px;
+	position: relative;
+}
+.tm-content {
+	margin-right: 140px;
+}
+
+.tm-aside {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 120px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.tm-aside img {
+	width: 80px;
+	height: 80px;
+}
+.tm-aside img:not(:last-child) {
+	margin-bottom: 20px;
+}
