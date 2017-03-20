@@ -56,15 +56,26 @@ footer {
 }
 
 .main {
-	float: left;
 	margin: 20px 396px 20px 20px;
 
+}
+
+aside {
+	float: right;
+	width: 360px;
+	padding: 20px;
+	margin-right: 18px;
+	background-color: #fff;
+	box-shadow: 1px 1px 1px 0 #888;
 }
 
 .ali-article {
 	padding: 40px 20px;
 	background-color: #fff;
 	box-shadow: 1px 1px 1px 0 #888;
+}
+.ali-article img {
+	max-width: 100%;
 }
 .ali-article:not(:last-child) {
 	margin-bottom: 18px;
@@ -81,6 +92,7 @@ footer {
 
 .ali-article-2 img {
 	margin: 18px 0;
+	max-width: 100%;
 }
 .ali-article-2 .ali-list {
 	list-style: none;
@@ -149,15 +161,7 @@ footer {
 	font-size: 14px;
 	line-height: 1.5;
 }
-aside {
-	float: left;
-	width: 360px;
-	margin-left: -378px;
-	margin-top: 20px;
-	padding: 20px;
-	background-color: #fff;
-	box-shadow: 1px 1px 1px 0 #888;
-}
+
 aside > h2 {
 	line-height: 38px;
 	padding-left: 10px;
