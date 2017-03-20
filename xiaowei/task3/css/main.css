@@ -23,9 +23,7 @@
 	background-color: #fff;
 }
 
-.tm-content {
-	margin: 0 140px 0 240px;
-}
+
 
 .tm-aside img {
 	width: 80px;
@@ -38,8 +36,14 @@
 .tm-float {
 	overflow: hidden;
 }
+
+
 .tm-float .tm-header {
 	float: left;
+}
+
+.tm-float .tm-content {
+	margin: 0 140px 0 220px;
 }
 
 .tm-float .tm-aside {
@@ -57,8 +61,30 @@
 	left: 20px;
 }
 
+.tm-absolute .tm-content {
+	margin: 0 140px 0 220px;
+}
+
 .tm-absolute .tm-aside {
 	position: absolute;
 	top: 20px;
 	right: 20px;
+}
+
+/*浮动+width:calc()*/
+.tm-calc {
+	overflow: hidden;
+}
+.tm-calc .tm-header {
+	float: left;
+}
+
+.tm-calc .tm-aside {
+	float: right;
+}
+
+.tm-calc .tm-content{
+	float: left;
+	width: calc(100% - 320px);
+	padding: 0 20px;
 }
